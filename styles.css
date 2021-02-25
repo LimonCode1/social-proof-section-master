@@ -30,68 +30,96 @@ body {
 	height: 100vh;
 }
 .father-Container {
-	width: 70%;
+	width: 80%;
 	height: 70vh;
 }
 .father-Container .container {
 	display: flex;
 }
 .father-Container .container .box {
-	width: 50%;
-	border: 2px solid black;
+	width: 45%;
 }
 .father-Container .container .box h1 {
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: 700;
 	color: var(--very-Dark-Magenta);
 	padding-right: 30%;
 }
 .father-Container .container .box p {
-	margin-bottom: 3rem;
 	padding-right: 28%;
 	margin-top: 1vh;
-	line-height: 2.2vh;
 	font-weight: 400;
 	color: var(--very-Dark-Magenta);
 }
-.father-Container .container .box .ratedBox {
+.father-Container .container .box2 {
+	width: 55%;
+	font-size: 8px;
+}
+.father-Container .container .box2 .ratedBox {
 	border-radius: 10px;
 	display: flex;
 	margin: 17px;
-	width: 60%;
-	padding: 2vh 30px;
+	width: 65%;
+	padding: 3vh 30px;
 	margin-right: -20px;
-	background: var(--dark-Grayish-Magenta);
+	background: #f7f2f8;
 }
-.father-Container .container .box .ratedBox img {
+.father-Container .container .box2 .ratedBox img {
 	padding: 0px 2px;
 }
-.father-Container .container .box .ratedBox h2 {
-	font-size: 15px;
-	font-weight: 700;
+.father-Container .container .box2 .ratedBox h2 {
+	font-weight: 400;
 	margin-left: 7%;
 }
-.father-Container .container .box .Two {
+.father-Container .container .box2 .Two {
 	margin-left: 12%;
 }
-.father-Container .container .box .Three {
+.father-Container .container .box2 .Three {
 	margin-left: 20%;
 }
-.father-Container .container .box .ratedBox h2 {
+.father-Container .container .box2 .ratedBox h2 {
 	font-size: 15px;
 	font-weight: 700;
 	margin-left: 7%;
 }
 .father-Container .container .card {
-	/* width: 50%; */
-	align-self: flex-end;
-	border: 2px solid black;
+	border-radius: 5px;
+	color: var(--white);
+	font-size: 11px;
+	height: 23vh;
+	background: var(--very-Dark-Magenta);
+	padding: 3%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.father-Container .container .two {
+	margin: 0% 3%;
+	margin-top: 3vh;
+}
+.father-Container .container .three {
+	margin-top: 6vh;
+}
+.father-Container .container .card img {
+	height: 40px;
+	border-radius: 50%;
+}
+.father-Container .container .card .name {
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-left: 10%;
+}
+.father-Container .container .card .name span {
+	color: var(--dark-Grayish-Magenta);
+}
+.father-Container .container .card p {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.6;
+	margin-top: 20px;
 }
 .attribution {
-	top: 98px;
+	/* padding-top: 9%; */
 	text-align: center;
-	height: 2vh;
-	background: var(--soft-Pink);
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
