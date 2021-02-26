@@ -62,13 +62,14 @@ body {
 	width: 65%;
 	padding: 3vh 30px;
 	margin-right: -20px;
-	background: #f7f2f8;
+	background: var(--light-Grayish-Magenta);
 }
 .father-Container .container .box2 .ratedBox img {
 	padding: 0px 2px;
 }
 .father-Container .container .box2 .ratedBox h2 {
-	font-weight: 400;
+	font-size: 15px;
+	font-weight: 700;
 	margin-left: 7%;
 }
 .father-Container .container .box2 .Two {
@@ -76,11 +77,6 @@ body {
 }
 .father-Container .container .box2 .Three {
 	margin-left: 20%;
-}
-.father-Container .container .box2 .ratedBox h2 {
-	font-size: 15px;
-	font-weight: 700;
-	margin-left: 7%;
 }
 .father-Container .container .card {
 	border-radius: 5px;
@@ -118,10 +114,88 @@ body {
 	margin-top: 20px;
 }
 .attribution {
-	/* padding-top: 9%; */
 	text-align: center;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
 	text-decoration: none;
+}
+/* media queries */
+@media only screen and (max-width: 375px) {
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	body {
+		background-image: url('./images/bg-pattern-bottom-mobile.svg'),
+			url('./images/bg-pattern-top-mobile.svg');
+		background-size: 100%, 100%;
+	}
+	.canvas {
+		height: auto;
+	}
+	.father-Container {
+		width: 85%;
+	}
+	.father-Container .container {
+		display: block;
+	}
+	.father-Container .container .box {
+		width: 100%;
+	}
+	.father-Container .container .box h1 {
+		margin-top: 10vh;
+		text-align: center;
+		font-size: 30px;
+		padding: 0%;
+	}
+	.father-Container .container .box p {
+		width: 100%;
+		padding: 0%;
+		text-align: center;
+		font-size: 14px;
+		line-height: 3vh;
+		margin-top: 2vh;
+	}
+	.father-Container .container .box2 {
+		width: 100%;
+		margin-top: 5vh;
+	}
+	.father-Container .container .box2 .ratedBox {
+		width: 100%;
+		display: block;
+		margin: 0%;
+	}
+	.father-Container .container .box2 .ratedBox .star {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.father-Container .container .box2 .ratedBox h2 {
+		text-align: center;
+		padding-top: 1vh;
+		font-size: 14px;
+		margin: 0%;
+		font-weight: 700;
+	}
+	.father-Container .container .box2 .Two {
+		margin: 2vh 0%;
+	}
+	.father-Container .container .card {
+		width: 100%;
+		margin-top: 6vh;
+		padding: 10%;
+		height: 30vh;
+	}
+	.father-Container .container .two {
+		margin: 2vh 0%;
+	}
+	.father-Container .container .three {
+		margin-bottom: 4vh;
+		margin-top: 0;
+	}
+	.attribution {
+		display: none;
+	}
 }
